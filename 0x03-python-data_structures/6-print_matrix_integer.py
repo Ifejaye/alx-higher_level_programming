@@ -1,3 +1,6 @@
+#!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    for i in range(matrix):
-        f
+    for i in matrix:
+        for j in range(len(i)):
+            print("{}".format(i[j]))
+        print("{}".format('\n'))
