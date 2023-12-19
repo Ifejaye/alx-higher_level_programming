@@ -1,7 +1,10 @@
+#!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-	for elem in range(my_list):
-		while (elem < x):
-			try:
-				print ("{:d}".format(my_list[elem]))
-			except:
-				pass
+	i = 0
+	while(i < x):
+		try:
+		print("{:d}".format(my_list[i]))
+		i= i + 1
+		except ValueError:
+		i = i + 1
+	return i
