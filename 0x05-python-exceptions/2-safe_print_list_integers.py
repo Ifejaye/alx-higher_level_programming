@@ -5,8 +5,9 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{:d}".format(my_list[i]), end=' ')
             i = i + 1
-        except (ValueError, IndexError):
+        except (IndexError):
             i = i + 1
+            break
         finally:
             pass
     print()  # Print a new line after the integers
